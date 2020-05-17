@@ -1,0 +1,45 @@
+-------------------------------------------------------------------------------------------------------------------------------------------
+Q1:
+
+Okay so i actually enjoyed this exercise because was really close to the answer.
+There were however parts i questioned and some i didint understand:
+
+Part a- For part two, why do we HAVE TO create a list of instances like seen in the first example below (e.g.1), and not have the alternative to using what is seen in part two (e.g.2):
+---e.g.1:
+my_cats = [Sally('Sally', 12), Simon('Simon', 13), Sammy('Sammy', 10)]
+
+----e.g.2:
+Sally = Sally('Sally', 12)
+Sammy = ('Sammy', 10)
+Simon = ('Simon', 13)
+my_cats = [Sally, Simon, Sammy]
+
+Part b- I initially thought you had to inherit a class before instantiating it with other objects, or is this because the class below Pets class are actually sub-classes?
+
+part c- Why is it that when it for part 3 where we Instantiate the Pet class with all our cats using variable my_pets, that when i print the list as seen below in the e.g.3, the output is the object memory and not the values?
+
+-----e.g.5:
+print(my_pets)
+
+
+
+A1:
+
+Part a: You do not have to create the list in the same way as the solution. It can be done the way you've mentioned as well.
+Part b: You do not need to inherit from another class in order to instantiate it with anything. In this case, the Pet class constructor, __init__(), expects a list of animals to be passed in.
+Part c: When you want to print a class, it needs to have a method called __str__() defined that returns the string representation for the class. If this method is not defined, then printing the 
+        class will just show the memory location as you've seen.
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Q2:
+Hi,
+
+I'm a little confused as to why we would ever want to change a Dunder method. I understand that when within a class and we create a method with the same name as as a Dunder
+method we have the capability to overwrite it (please correct me if this is wrong, is it wrong?), but why would you ever want to do this?
+Surely, we could just make my own del method that deletes an attribute (also using the del Dunder method within it, or a method called newNumber that returns the value 5?
+Would this not just cause confusion for future developers looking at my code when maintaining part of a software we made?
+
+A2:
+Dunder methods are designed to let you incorporate basic functionality into your own classes. So you define a __len__() method so that you can use the built-in length() function on your class objects, 
+or the __str__() method so you can call print() on them and display something meaningful for the class.
+------------------------------------------------------------------------------------------------------------------------------------------
