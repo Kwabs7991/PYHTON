@@ -13,18 +13,22 @@ class Person:
     self.name = name
     Person.number_of_people += 1
 
-p1 = Person("Michael")
+p1 = Person("Amirah")
+print(p1.name)
 print(p1.number_of_people)
 print("\n")
 
-p2 = Person("Avon")
+p2 = Person("Alia")
+print(p2.name)
 print(p1.number_of_people)
 print("\n")
 
-p3 = Person("Avon")
+p3 = Person("Ezekiel")
+print(p3.name)
 print(p1.number_of_people)
 print("\n")
 
-p4 = Person("Avon")
+p4 = Person("Tobias")
+print(p4.name)
 print(p1.number_of_people)
 print("\n")
