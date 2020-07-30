@@ -68,3 +68,26 @@ room1 = HLW(HLW.length_input, HLW.height_input, HLW.width_input)
 
 print(room1.h_l_w_measurements())
 print(room1.plastering_cost( ceiling_Area, fourwall_Area))
+
+
+ 
+#     def ceiling_area(self):
+#         pass
+
+#     def totalArea_of_four(self):
+#         pass
+    
+#     def extras(self):
+#         pass
+    
+#     def types_of_paints(self):
+#         pass
+    
+#     def undercoat(self):
+#         pass
+    
+#     def estimate_hours(self):
+#         pass
+    
+#     def labour_costs(self):
+#         pass
